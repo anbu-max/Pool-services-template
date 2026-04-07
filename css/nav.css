@@ -9,7 +9,7 @@
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   border-bottom: 1px solid transparent;
-  z-index: var(--nav-z);
+  z-index: 100000; /* Extremely high to stay on top of sections with relative/absolute */
   transition: background var(--duration-base) var(--ease-smooth),
               backdrop-filter var(--duration-base) var(--ease-smooth),
               border-color var(--duration-base) var(--ease-smooth),
@@ -175,23 +175,23 @@
 
 /* Mobile Menu */
 .nav__mobile {
-  display: block; /* Always block but hidden via transform/opacity */
+  display: block;
   position: fixed;
   top: var(--nav-height);
   left: 0;
-  right: 0;
-  bottom: 0; /* Full height to ensure it covers */
-  background: #ffffff;
-  padding: var(--space-6) var(--container-pad);
-  transform: translateY(-100%);
+  width: 100%;
+  height: calc(100vh - var(--nav-height));
+  background: #ffffff !important;
+  padding: var(--space-8) var(--container-pad);
+  transform: translateY(-10px);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: transform var(--duration-slow) var(--ease-out),
-              opacity var(--duration-slow) var(--ease-out),
-              visibility var(--duration-slow);
-  z-index: calc(var(--nav-z) - 1); /* Just below the top bar */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100001; /* Above almost everything */
   overflow-y: auto;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .nav__mobile.open {
