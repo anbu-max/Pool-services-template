@@ -151,8 +151,8 @@
     <!-- CTA Section (Dark Blue) -->
     <section class="section-padding section--video" style="background: var(--bg-dark-blue); text-align: center;">
       <div class="section__video-container">
-        <video autoplay muted loop playsinline poster="../Assests/Ref images/testimonial bg.png">
-          <source src="../Assests/Hero bg video/testimonial bg.mp4" type="video/mp4">
+        <video id="ctaVideo" autoplay muted loop playsinline preload="metadata" poster="../Assests/Ref images/hero_pool_poster.png">
+          <source data-src="../Assests/Hero bg video/testimonial bg.mp4" type="video/mp4">
         </video>
         <div class="section__video-overlay" style="background: rgba(1, 34, 71, 0.75);"></div>
       </div>
@@ -196,6 +196,7 @@
     </div>
   </footer>
 
+  <script src="../js/lazy-load.js"></script>
   <script src="../js/nav-init.js"></script>
   <script src="../js/animations.js"></script>
   <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
