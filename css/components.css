@@ -231,3 +231,15 @@
   z-index: 10;
   margin-inline: auto;
 }
+
+.hero__btns {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+@media (max-width: 600px) {
+  .hero__btns {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}

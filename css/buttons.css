@@ -74,4 +74,12 @@
   font-size: var(--size-md);
 }
 
+@media (max-width: 600px) {
+  .btn--lg {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--size-sm);
+    width: 100%; /* Make them full width on mobile for better tap target */
+  }
+}
+
 .btn:active { transform: translateY(0) scale(0.98); }
