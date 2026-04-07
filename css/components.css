@@ -214,7 +214,7 @@
 .testimonial-title {
   color: #ffffff;
   font-weight: 900 !important;
-  font-size: clamp(2.25rem, 8vw, 4.5rem);
+  font-size: clamp(2.25rem, 8vw, 3.5rem);
   text-shadow: 0 4px 12px rgba(0,0,0,0.5);
   position: relative;
   z-index: 10;
@@ -230,6 +230,17 @@
   position: relative;
   z-index: 10;
   margin-inline: auto;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+@media (min-width: 768px) {
+  .checklist-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .hero__btns {
