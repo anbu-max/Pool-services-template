@@ -205,14 +205,23 @@
 
 .nav__mobile-link {
   display: block;
+  width: 100%;
   padding: var(--space-4) 0;
   color: var(--text-primary);
   font-size: var(--size-md);
   font-weight: var(--weight-semi);
+  border: none; /* Removed the square box */
   border-bottom: 1px solid rgba(0,0,0,0.05);
+  background: transparent; /* Fixed gray background */
+  text-align: left;
   transition: color var(--duration-fast) var(--ease-smooth);
 }
 .nav__mobile-link:hover { color: var(--color-secondary); }
+
+/* Remove bottom border for triggers to separate them from content */
+.nav__mobile-item--dropdown > .nav__mobile-link {
+  border-bottom: none;
+}
 
 .nav__mobile-item--dropdown .nav__mobile-link {
   display: flex;
@@ -232,6 +241,7 @@
 .nav__mobile-item--dropdown.open .nav__mobile-dropdown {
   max-height: 500px; /* Adjust as needed */
   padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(0,0,0,0.05); /* Add it here instead */
 }
 
 .nav__mobile-item--dropdown .nav__arrow {
