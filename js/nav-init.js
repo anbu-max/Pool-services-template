@@ -25,10 +25,12 @@
   }
 
   // Mobile Dropdowns logic
-  const mobileDropdownTriggers = document.querySelectorAll('.nav__mobile-item--dropdown .nav__mobile-link');
+  const mobileDropdownTriggers = document.querySelectorAll('.nav__mobile-item--dropdown > .nav__mobile-link');
   mobileDropdownTriggers.forEach(function (trigger) {
     trigger.addEventListener('click', function (e) {
-      e.preventDefault();
+      if (trigger.tagName.toLowerCase() === 'button' || trigger.classList.contains('nav__dropdown-trigger')) {
+        e.preventDefault();
+      }
       const parent = trigger.closest('.nav__mobile-item--dropdown');
       const isOpen = parent.classList.toggle('open');
       trigger.setAttribute('aria-expanded', isOpen);
@@ -69,9 +71,16 @@
     }
   });
 
-  const links = document.querySelectorAll('.nav__link[href]');
-  links.forEach(function (link) {
-    if (link.getAttribute('href') === window.location.pathname.split('/').pop()) {
+  // Active Link Highlight
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav__link, .nav__mobile-link');
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    
+    // Convert relative paths for comparison
+    const linkUrl = new URL(href, window.location.origin + window.location.pathname).pathname;
+    if (currentPath === linkUrl || (currentPath.endsWith('/') && linkUrl.endsWith('index.html'))) {
       link.classList.add('active');
     }
   });
