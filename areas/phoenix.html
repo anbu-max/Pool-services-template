@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium Pool Care in Phoenix | JerBear Pool Care">
+  <title>Premium Pool Care in Phoenix | JerBear Pool Care</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="mainNav" role="banner">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="JerBear Home">
+        <img src="../Assests/Ref images/Logo.png" alt="JerBear Pool Care Logo">
+      </a>
+      <nav class="nav__menu" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Home</a></li>
+          
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              Services <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="../services/pool-maintenance.html" class="nav__dropdown-link" role="menuitem">Weekly Pool Cleaning</a></li>
+              <li><a href="../services/equipment-repair.html" class="nav__dropdown-link" role="menuitem">Equipment Repair</a></li>
+              <li><a href="../services/restoration.html" class="nav__dropdown-link" role="menuitem">One-Time Deep Clean</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+              Areas <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="phoenix.html" class="nav__dropdown-link" role="menuitem">Phoenix</a></li>
+              <li><a href="scottsdale.html" class="nav__dropdown-link" role="menuitem">Scottsdale</a></li>
+              <li><a href="mesa.html" class="nav__dropdown-link" role="menuitem">Mesa</a></li>
+            </ul>
+          </li>
+
+          <li><a href="../contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="../contact.html" class="btn btn--nav text-inverse">Book Now</a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-list">
+        <li><a href="../index.html" class="nav__mobile-link">Home</a></li>
+        
+        <li class="nav__mobile-item--dropdown">
+          <button class="nav__mobile-link" aria-expanded="false">
+             Services <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="nav__mobile-dropdown">
+            <li><a href="../services/pool-maintenance.html" class="nav__mobile-link">Weekly Pool Cleaning</a></li>
+            <li><a href="../services/equipment-repair.html" class="nav__mobile-link">Equipment Repair</a></li>
+            <li><a href="../services/restoration.html" class="nav__mobile-link">One-Time Deep Clean</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__mobile-item--dropdown open">
+          <button class="nav__mobile-link" aria-expanded="true">
+             Areas <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="nav__mobile-dropdown">
+            <li><a href="phoenix.html" class="nav__mobile-link" style="color: var(--color-secondary);">Phoenix</a></li>
+            <li><a href="scottsdale.html" class="nav__mobile-link">Scottsdale</a></li>
+            <li><a href="mesa.html" class="nav__mobile-link">Mesa</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../contact.html" class="nav__mobile-link">Contact</a></li>
+        <li><a href="../contact.html" class="btn btn--primary" style="margin-top:1.5rem;display:block;text-align:center;">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" style="padding-top: var(--nav-height);">
+    <!-- Hero Section (Light Blue) -->
+    <section class="bg-light-blue section-padding" style="overflow: hidden;">
+      <div class="container grid-2" style="align-items: center;">
+        <div data-animate="fade-right">
+          <div style="display:inline-flex; align-items:center; gap:var(--space-2); padding:var(--space-2) var(--space-4); background:var(--bg-blue); color:var(--color-secondary); border-radius:var(--radius-pill); font-size:var(--size-xs); font-weight:bold; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:var(--space-6);">
+            Phoenix Arizona
+          </div>
+          <h1 style="font-size: 4rem; line-height: 1.1; margin-bottom: var(--space-6);">
+            Premium Pool Care <br><span style="color: var(--color-accent); font-style: italic;">in Phoenix</span>
+          </h1>
+          <p style="font-size: var(--size-lg); color: var(--text-secondary); margin-bottom: var(--space-8);">
+            Experience the gold standard of local pool maintenance. We curate crystal clear oases for Phoenix homeowners with precision and trust.
+          </p>
+          <div style="display: flex; gap: var(--space-4);">
+            <a href="../contact.html" class="btn btn--primary btn--lg">Get a Quote</a>
+          </div>
+        </div>
+        <div data-animate="fade-left" style="position: relative;">
+          <div style="position: absolute; inset: -1rem; background: var(--bg-blue); border-radius: 50%; filter: blur(40px); z-index: 0;"></div>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQfBX02-W7CDrbt5eWj6ACI_CiJatMR_eecSz6Y_zoqJTtTSCmxl13Sc1ySSayBVFaM_LZEpMN9XuTWxrs_jez_S3a8JFtKCJgC91N9b7ebH0hvJSTHJjsIkkWmUpcw47WLmvfOoTqqBNI16Thsni24FC3zDUTfrkheDxp_e61l_VWmewCLDNixDl34Xz91_gedfEgxY9u1jb02GMFnzrlQKBg6qDoZeH9yo7sFvtSvhX3p_8kvgP1tKxgrztuvksNbUC1iW_tikQ" alt="Luxury pool in Phoenix" class="img-rounded" style="height: auto; max-height: 500px; width: 100%; position: relative; z-index: 1; aspect-ratio: 4/3;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Details Section (White) -->
+    <section class="bg-white section-padding">
+      <div class="container text-center" data-animate="fade-up">
+        <h2 style="font-size: 3rem; margin-bottom: var(--space-6);">Phoenix's Trusted Pool Partners</h2>
+        <p class="section-subtitle max-w-2xl mx-auto">From Arcadia's lush historic homes to the modern builds of North Phoenix, we provide expert care to keep your desert oasis pristine year-round.</p>
+        
+        <div class="grid-3" style="margin-top: var(--space-12); text-align: left;" data-stagger>
+          <div class="card bg-light-blue">
+             <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-accent); margin-bottom: var(--space-4);">verified_user</span>
+             <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-4);">Licensed & Bonded</h4>
+             <p class="card__text">Full protection and professional compliance for your absolute peace of mind.</p>
+          </div>
+
+          <div class="card bg-light-blue">
+             <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-accent); margin-bottom: var(--space-4);">schedule</span>
+             <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-4);">Punctuality Guaranteed</h4>
+             <p class="card__text">We value your time as much as your pool. Reliable scheduling you can set your watch to.</p>
+          </div>
+
+          <div class="card bg-light-blue">
+            <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-accent); margin-bottom: var(--space-4);">payments</span>
+            <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-4);">Transparent Pricing</h4>
+            <p class="card__text" style="margin-bottom: var(--space-8);">No hidden fees, no surprise costs. Just clear, upfront value for premium service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section (Dark Blue) -->
+    <section class="section-padding section--video" style="background: var(--bg-dark-blue); text-align: center;">
+      <div class="section__video-container">
+        <video autoplay muted loop playsinline poster="../Assests/Ref images/testimonial bg.png">
+          <source src="../Assests/Hero bg video/testimonial bg.mp4" type="video/mp4">
+        </video>
+        <div class="section__video-overlay" style="background: rgba(1, 34, 71, 0.75);"></div>
+      </div>
+      <div class="container" data-animate="fade-up">
+        <h2 class="testimonial-title" style="font-size: 3.5rem;">Ready for a Crystal Clear Pool?</h2>
+        <p class="testimonial-subtitle" style="margin-bottom: var(--space-10);">Join hundreds of satisfied Phoenix homeowners. Get your custom maintenance plan today.</p>
+        <a href="../contact.html" class="btn btn--primary btn--lg" style="background: white; color: var(--color-secondary); position: relative; z-index: 10;">Request Your Free Estimate</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="footer__logo">
+            <img src="../Assests/Ref images/Logo.png" alt="JerBear Pool Care">
+          </a>
+          <p class="footer__tagline">Redefining pool maintenance with an editorial eye for clarity and professionalism.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html#why-us">Why Us</a></li>
+            <li><a href="../contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@jerbearpoolcare.com">hello@jerbearpoolcare.com</a></li>
+            <li><a href="tel:5552487631">(555) 248-7631</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="footerYear"></span> JerBear Pool Care. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav-init.js"></script>
+  <script src="../js/animations.js"></script>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

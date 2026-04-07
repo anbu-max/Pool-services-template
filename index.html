@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JerBear Pool Care — Pristine Pools. Perfect Peace of Mind.">
+  <title>JerBear Pool Care | Pristine Pools</title>
+
+  <!-- Google Fonts: Outfit and DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Core CSS (Vanilla) -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="mainNav" role="banner">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="JerBear Home">
+        <img src="Assests/Ref images/Logo.png" alt="JerBear Pool Care Logo">
+      </a>
+
+      <nav class="nav__menu" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active">Home</a></li>
+          
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              Services <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="services/pool-maintenance.html" class="nav__dropdown-link" role="menuitem">Weekly Pool Cleaning</a></li>
+              <li><a href="services/equipment-repair.html" class="nav__dropdown-link" role="menuitem">Equipment Repair</a></li>
+              <li><a href="services/restoration.html" class="nav__dropdown-link" role="menuitem">One-Time Deep Clean</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              Areas <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="areas/phoenix.html" class="nav__dropdown-link" role="menuitem">Phoenix</a></li>
+              <li><a href="areas/scottsdale.html" class="nav__dropdown-link" role="menuitem">Scottsdale</a></li>
+              <li><a href="areas/mesa.html" class="nav__dropdown-link" role="menuitem">Mesa</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn--nav text-inverse">Book Now</a>
+
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-list">
+        <li><a href="index.html" class="nav__mobile-link active">Home</a></li>
+        
+        <li class="nav__mobile-item--dropdown">
+          <button class="nav__mobile-link" aria-expanded="false">
+             Services <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="nav__mobile-dropdown">
+            <li><a href="services/pool-maintenance.html" class="nav__mobile-link">Weekly Pool Cleaning</a></li>
+            <li><a href="services/equipment-repair.html" class="nav__mobile-link">Equipment Repair</a></li>
+            <li><a href="services/restoration.html" class="nav__mobile-link">One-Time Deep Clean</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__mobile-item--dropdown">
+          <button class="nav__mobile-link" aria-expanded="false">
+             Areas <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="nav__mobile-dropdown">
+            <li><a href="areas/phoenix.html" class="nav__mobile-link">Phoenix</a></li>
+            <li><a href="areas/scottsdale.html" class="nav__mobile-link">Scottsdale</a></li>
+            <li><a href="areas/mesa.html" class="nav__mobile-link">Mesa</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html" class="nav__mobile-link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn--primary" style="margin-top:1.5rem;display:block;text-align:center;">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" tabindex="-1">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata">
+          <source src="Assests/Hero bg video/Best one .mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__eyebrow" data-animate="fade-up">
+          <span class="material-symbols-outlined" style="font-size: 18px;">waves</span>
+          Swimming Pool Cleaning
+        </div>
+        <h1 class="hero__title" data-animate="fade-up" style="--delay:100ms">
+          Enjoy a Sparkling Pool<br> This Weekend <span class="hero__accent">Without</span><br> Lifting a Finger
+        </h1>
+        <p class="hero__subtitle" data-animate="fade-up" style="--delay:200ms">
+          Stop wrestling with chemicals and scrubbing grime yourself. Our expert team handles the maintenance on autopilot, so your only job is to dive in and enjoy crystal-clear water.
+        </p>
+        <div class="hero__actions" data-animate="fade-up" style="--delay:300ms">
+          <a href="contact.html" class="btn btn--primary btn--lg">Get Free Quote &rarr;</a>
+          <a href="tel:5552487631" class="btn btn--ghost btn--lg">
+            <span class="material-symbols-outlined">call</span> Call Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- SWAPPING COLOR: LIGHT BLUE -->
+    <section class="bg-light-blue section-padding" id="services">
+      <div class="container">
+        <div class="text-center mb-24" data-animate="fade-up">
+          <div style="display:inline-flex; align-items:center; gap:var(--space-2); padding:var(--space-2) var(--space-4); background:var(--bg-white); color:var(--color-secondary); border-radius:var(--radius-pill); font-size:var(--size-xs); font-weight:bold; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:var(--space-6); box-shadow:var(--shadow-sm);">
+            <span class="material-symbols-outlined" style="font-size: 16px;">verified</span> Our Services
+          </div>
+          <h2 class="section-title">Expert Pool Solutions</h2>
+          <p class="section-subtitle max-w-2xl">Comprehensive care tailored to the unique needs of your luxury water feature.</p>
+        </div>
+        
+        <div class="grid-3" data-stagger>
+          <div class="card">
+            <div>
+              <div class="card__icon"><span class="material-symbols-outlined" style="font-size:32px">pool</span></div>
+              <h3 class="card__title">Weekly Pool Cleaning</h3>
+              <p class="card__text">Full debris removal, skimming, and wall brushing to maintain a flawless finish year-round.</p>
+            </div>
+            <a href="services/pool-maintenance.html" class="card__link">Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></a>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="card__icon"><span class="material-symbols-outlined" style="font-size:32px">science</span></div>
+              <h3 class="card__title">Chemical Balancing</h3>
+              <p class="card__text">Precise testing and adjustments to ensure safe, soft, and sparkling water for your family.</p>
+            </div>
+            <a href="contact.html" class="card__link">Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></a>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="card__icon"><span class="material-symbols-outlined" style="font-size:32px">filter_alt</span></div>
+              <h3 class="card__title">Filter Cleaning</h3>
+              <p class="card__text">Regular deep cleaning of DE, Cartridge, or Sand filters to maximize flow and clarity.</p>
+            </div>
+            <a href="contact.html" class="card__link">Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></a>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="card__icon"><span class="material-symbols-outlined" style="font-size:32px">construction</span></div>
+              <h3 class="card__title">Equipment Inspection</h3>
+              <p class="card__text">Proactive multi-point check of pumps, heaters, and automation systems to prevent costly repairs.</p>
+            </div>
+            <a href="services/equipment-repair.html" class="card__link">Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></a>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="card__icon"><span class="material-symbols-outlined" style="font-size:32px">eco</span></div>
+              <h3 class="card__title">Green Pool Recovery</h3>
+              <p class="card__text">Swamp-to-Sanctuary transformation in as little as 48 hours with our shock-treatment protocol.</p>
+            </div>
+            <a href="contact.html" class="card__link">Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></a>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="card__icon"><span class="material-symbols-outlined" style="font-size:32px">clean_hands</span></div>
+              <h3 class="card__title">One-Time Deep Clean</h3>
+              <p class="card__text">Perfect for parties or real estate showings. We restore that showroom shine on demand.</p>
+            </div>
+            <a href="services/restoration.html" class="card__link">Learn More <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-white section-padding" id="why-us">
+      <div class="container" style="text-align: center;">
+        <div data-animate="fade-up" style="max-width: 800px; margin: 0 auto var(--space-12);">
+          <div style="display:inline-flex; align-items:center; gap:var(--space-2); padding:var(--space-2) var(--space-4); background:var(--bg-light-blue); color:var(--color-secondary); border-radius:var(--radius-pill); font-size:var(--size-xs); font-weight:bold; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:var(--space-6); box-shadow:var(--shadow-sm);">
+            <span class="material-symbols-outlined" style="font-size: 16px;">groups</span> About Us
+          </div>
+          <h2 class="section-title mb-8" style="line-height: 1.1;">Why Homeowners Choose JerBear</h2>
+          <p class="text-on-surface-variant" style="font-size: var(--size-lg); max-width: 60ch; margin: 0 auto;">Experience the ultimate in backyard luxury with our premium, reliable, and honest pool care solutions.</p>
+        </div>
+
+        <div class="grid-3" style="gap: var(--space-8); text-align: left;">
+          
+          <div class="feature-box" data-animate="fade-up" style="padding: var(--space-10); background: var(--bg-light-blue); border: 1px solid rgba(2, 132, 199, 0.1); transition: transform 0.3s ease;">
+            <span class="material-symbols-outlined feature-icon" style="font-size:48px; color: var(--color-secondary); margin-bottom: var(--space-6);">pool</span>
+            <h3 style="font-size: var(--size-xl); font-weight: 900; margin-bottom: var(--space-4);">Be the Parent,<br>Not the Pool Boy</h3>
+            <p class="card__text" style="font-size:var(--size-base); line-height: 1.7;">Your kids want you in the water, not scrubbing algae. We handle the <strong>"dirty work" on autopilot</strong> so you can reclaim your Saturdays for the cannonballs and BBQs that actually matter.</p>
+          </div>
+
+          <div class="feature-box" data-animate="fade-up" style="--delay:100ms; padding: var(--space-10); background: var(--bg-light-blue); border: 1px solid rgba(2, 132, 199, 0.1); transition: transform 0.3s ease;">
+            <span class="material-symbols-outlined feature-icon" style="font-size:48px; color: var(--color-secondary); margin-bottom: var(--space-6);">home_work</span>
+            <h3 style="font-size: var(--size-xl); font-weight: 900; margin-bottom: var(--space-4);">Total Backyard<br>Peace</h3>
+            <p class="card__text" style="font-size:var(--size-base); line-height: 1.7;">We take full ownership of your pool’s health. Enjoy a <strong>sparkling oasis</strong> without the nightmare of testing chemicals or fixing filters. If there’s an issue, we’ve already solved it before you even step outside.</p>
+          </div>
+
+          <div class="feature-box" data-animate="fade-up" style="--delay:200ms; padding: var(--space-10); background: var(--bg-light-blue); border: 1px solid rgba(2, 132, 199, 0.1); transition: transform 0.3s ease;">
+            <span class="material-symbols-outlined feature-icon" style="font-size:48px; color: var(--color-secondary); margin-bottom: var(--space-6);">handshake</span>
+            <h3 style="font-size: var(--size-xl); font-weight: 900; margin-bottom: var(--space-4);">The "Handshake"<br>Pricing</h3>
+            <p class="card__text" style="font-size:var(--size-base); line-height: 1.7;">Stop being "nickel and dimed" by mystery chemical fees. We provide <strong>honest, flat-rate pricing</strong>. You’ll know your exact investment every month—no surprises, no "bill shock," just total predictability.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding section--video" id="testimonials" style="background: var(--color-primary);">
+      <div class="section__video-container">
+        <video autoplay muted loop playsinline poster="Assests/Ref images/testimonial bg.png">
+          <source src="Assests/Hero bg video/Kid swimming.mp4" type="video/mp4">
+        </video>
+        <div class="section__video-overlay" style="background: rgba(1, 34, 71, 0.6);"></div>
+      </div>
+      <div class="container" data-animate="fade-up">
+        <div class="text-center mb-24">
+          <div style="display:inline-flex; align-items:center; gap:var(--space-2); padding:var(--space-2) var(--space-4); background:white; color:var(--text-primary); border-radius:var(--radius-pill); font-size:var(--size-xs); font-weight:bold; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:var(--space-6); box-shadow:var(--shadow-sm); position: relative; z-index: 10;">
+            <span class="material-symbols-outlined" style="font-size: 16px;">reviews</span> Client Reviews
+          </div>
+          <h2 class="testimonial-title">What Our Clients Say</h2>
+          <p class="testimonial-subtitle max-w-2xl">Don't just take our word for it. Hear from homeowners who trust JerBear Pool Care.</p>
+        </div>
+        
+        <div class="grid-3" data-stagger style="text-align: left;">
+          <div class="card" style="background: white;">
+            <div style="display:flex; color: #fbbf24; margin-bottom: var(--space-4);">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="card__text" style="font-style: italic; margin-bottom: var(--space-6);">"Absolutely the best service in Arizona. They brought our green pool back to life in days, and it's been crystal clear ever since. Highly recommended!"</p>
+            <h4 style="font-size: var(--size-md); font-family: var(--font-headline); font-weight: bold; color: var(--color-primary);">Sarah M.</h4>
+            <div style="font-size: var(--size-xs); color: var(--text-secondary); text-transform: uppercase;">Scottsdale</div>
+          </div>
+          <div class="card" style="background: white;">
+            <div style="display:flex; color: #fbbf24; margin-bottom: var(--space-4);">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="card__text" style="font-style: italic; margin-bottom: var(--space-6);">"Professional, punctual, and extremely knowledgeable. We signed up for weekly cleaning, and I've never had to worry about my pool again."</p>
+            <h4 style="font-size: var(--size-md); font-family: var(--font-headline); font-weight: bold; color: var(--color-primary);">David L.</h4>
+            <div style="font-size: var(--size-xs); color: var(--text-secondary); text-transform: uppercase;">Phoenix</div>
+          </div>
+          <div class="card" style="background: white;">
+            <div style="display:flex; color: #fbbf24; margin-bottom: var(--space-4);">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="card__text" style="font-style: italic; margin-bottom: var(--space-6);">"They detected a leak we didn't even know we had and repaired the equipment seamlessly. Top tier communication and honest pricing."</p>
+            <h4 style="font-size: var(--size-md); font-family: var(--font-headline); font-weight: bold; color: var(--color-primary);">Maria G.</h4>
+            <div style="font-size: var(--size-xs); color: var(--text-secondary); text-transform: uppercase;">Mesa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- SWAPPING COLOR: LIGHT BLUE -->
+    <section class="bg-light-blue section-padding" id="contact">
+      <div class="container" data-animate="fade-up">
+        
+        <div class="form-card">
+          <div class="form-card__info">
+            <div>
+              <div style="display:inline-flex; align-items:center; gap:var(--space-2); padding:var(--space-2) var(--space-4); background:rgba(255,255,255,0.2); color:white; border-radius:var(--radius-pill); font-size:var(--size-xs); font-weight:bold; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:var(--space-6);">
+                <span class="material-symbols-outlined" style="font-size: 16px;">contact_support</span> Contact Us
+              </div>
+              <h2 class="section-title">Ready for a Crystal Clear Oasis?</h2>
+              <p style="color: rgba(255,255,255,0.9); margin-bottom: var(--space-10);">Fill out the form and we'll provide a free, no-obligation premium quote for your pool within 24 hours.</p>
+              
+              <div style="margin-bottom: var(--space-6); display: flex; align-items: center; gap: var(--space-4);">
+                <div style="width: 56px; height: 56px; background: rgba(255,255,255,0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div>
+                  <div style="font-size: var(--size-xs); font-weight: bold; opacity: 0.8; text-transform: uppercase;">Email Us</div>
+                  <div style="font-size: var(--size-md); font-weight: bold;">hello@jerbearpoolcare.com</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: var(--space-4);">
+                <div style="width: 56px; height: 56px; background: rgba(255,255,255,0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+                  <span class="material-symbols-outlined">call</span>
+                </div>
+                <div>
+                  <div style="font-size: var(--size-xs); font-weight: bold; opacity: 0.8; text-transform: uppercase;">Call Direct</div>
+                  <div style="font-size: var(--size-md); font-weight: bold;">(555) 248-7631</div>
+                </div>
+              </div>
+            </div>
+            
+            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-10);">
+              <a href="#" style="width: 48px; height: 48px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                <span class="material-symbols-outlined">public</span>
+              </a>
+              <a href="#" style="width: 48px; height: 48px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                <span class="material-symbols-outlined">thumb_up</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="form-card__form">
+            <form>
+              <div style="display: flex; gap: var(--space-4);">
+                <div class="input-group" style="width: 50%;">
+                  <label>Name</label>
+                  <input type="text" class="input-control" placeholder="John Doe">
+                </div>
+                <div class="input-group" style="width: 50%;">
+                  <label>Phone</label>
+                  <input type="tel" class="input-control" placeholder="(555) 000-0000">
+                </div>
+              </div>
+              <div class="input-group">
+                <label>Email</label>
+                <input type="email" class="input-control" placeholder="john@example.com">
+              </div>
+              <div class="input-group">
+                <label>Message</label>
+                <textarea class="input-control" rows="5" placeholder="Tell us about your pool and specific needs..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width: 100%; border-radius: var(--radius-md); padding: var(--space-4); font-size: var(--size-lg);">Request Professional Quote</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <img src="Assests/Ref images/Logo.png" alt="JerBear Pool Care">
+          </a>
+          <p class="footer__tagline">Redefining pool maintenance with an editorial eye for clarity and professionalism.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#why-us">Why Us</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@jerbearpoolcare.com">hello@jerbearpoolcare.com</a></li>
+            <li><a href="tel:5552487631">(555) 248-7631</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="footerYear"></span> JerBear Pool Care. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav-init.js"></script>
+  <script src="js/animations.js"></script>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* ── ANIMATION SYSTEM ── */
+
+/* Pop-in prevention — elements start invisible */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+[data-animate="fade-up"].in-view { opacity: 1; transform: translateY(0); }
+[data-animate="fade-in"].in-view { opacity: 1; transform: none; }
+[data-animate="fade-right"] { transform: translateX(-32px); }
+[data-animate="fade-right"].in-view { opacity: 1; transform: translateX(0); }
+[data-animate="fade-left"] { transform: translateX(32px); }
+[data-animate="fade-left"].in-view { opacity: 1; transform: translateX(0); }
+
+/* Stagger children */
+[data-stagger] > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+[data-stagger] > *.in-view { opacity: 1; transform: translateY(0); }
+[data-stagger] > *:nth-child(1) { transition-delay: 0ms; }
+[data-stagger] > *:nth-child(2) { transition-delay: 80ms; }
+[data-stagger] > *:nth-child(3) { transition-delay: 160ms; }
+[data-stagger] > *:nth-child(4) { transition-delay: 240ms; }
+[data-stagger] > *:nth-child(5) { transition-delay: 320ms; }
+[data-stagger] > *:nth-child(6) { transition-delay: 400ms; }

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pool Restoration & Deep Cleaning | JerBear Pool Care">
+  <title>Pool Restoration & Deep Cleaning | JerBear Pool Care</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="mainNav" role="banner">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="JerBear Home">
+        <img src="../Assests/Ref images/Logo.png" alt="JerBear Pool Care Logo">
+      </a>
+      <nav class="nav__menu" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Home</a></li>
+          
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+              Services <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="pool-maintenance.html" class="nav__dropdown-link" role="menuitem">Weekly Pool Cleaning</a></li>
+              <li><a href="equipment-repair.html" class="nav__dropdown-link" role="menuitem">Equipment Repair</a></li>
+              <li><a href="restoration.html" class="nav__dropdown-link" role="menuitem">One-Time Deep Clean</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+              Areas <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="nav__dropdown" role="menu">
+              <li><a href="../areas/phoenix.html" class="nav__dropdown-link" role="menuitem">Phoenix</a></li>
+              <li><a href="../areas/scottsdale.html" class="nav__dropdown-link" role="menuitem">Scottsdale</a></li>
+              <li><a href="../areas/mesa.html" class="nav__dropdown-link" role="menuitem">Mesa</a></li>
+            </ul>
+          </li>
+
+          <li><a href="../contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="../contact.html" class="btn btn--nav text-inverse">Book Now</a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__mobile-list">
+        <li><a href="../index.html" class="nav__mobile-link">Home</a></li>
+        
+        <li class="nav__mobile-item--dropdown open">
+          <button class="nav__mobile-link" aria-expanded="true">
+             Services <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="nav__mobile-dropdown">
+            <li><a href="pool-maintenance.html" class="nav__mobile-link">Weekly Pool Cleaning</a></li>
+            <li><a href="equipment-repair.html" class="nav__mobile-link">Equipment Repair</a></li>
+            <li><a href="restoration.html" class="nav__mobile-link" style="color: var(--color-secondary);">One-Time Deep Clean</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__mobile-item--dropdown">
+          <button class="nav__mobile-link" aria-expanded="false">
+             Areas <svg class="nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="nav__mobile-dropdown">
+            <li><a href="../areas/phoenix.html" class="nav__mobile-link">Phoenix</a></li>
+            <li><a href="../areas/scottsdale.html" class="nav__mobile-link">Scottsdale</a></li>
+            <li><a href="../areas/mesa.html" class="nav__mobile-link">Mesa</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../contact.html" class="nav__mobile-link">Contact</a></li>
+        <li><a href="../contact.html" class="btn btn--primary" style="margin-top:1.5rem;display:block;text-align:center;">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" style="padding-top: var(--nav-height);">
+    <!-- Hero Section (Light Blue) -->
+    <section class="bg-light-blue section-padding" style="overflow: hidden;">
+      <div class="container grid-2" style="align-items: center;">
+        <div data-animate="fade-right">
+          <div style="display:inline-flex; align-items:center; gap:var(--space-2); padding:var(--space-2) var(--space-4); background:var(--bg-blue); color:var(--color-secondary); border-radius:var(--radius-pill); font-size:var(--size-xs); font-weight:bold; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:var(--space-6);">
+            <span class="material-symbols-outlined">cleaning_services</span>
+            Professional Restoration
+          </div>
+          <h1 style="font-size: 4rem; line-height: 1.1; margin-bottom: var(--space-6);">
+            Pool Restoration & <br><span style="color: var(--color-accent); font-style: italic;">Deep Cleaning</span>
+          </h1>
+          <p style="font-size: var(--size-lg); color: var(--text-secondary); margin-bottom: var(--space-8);">
+            Transforming weathered aquatic spaces into pristine private oases. We specialize in bringing life back to tired surfaces with surgical precision and eco-friendly chemistry.
+          </p>
+          <div style="display: flex; gap: var(--space-4);">
+            <a href="../contact.html" class="btn btn--primary btn--lg">Start Transformation</a>
+            <a href="#specialty" class="btn btn--secondary btn--lg">View Portfolio</a>
+          </div>
+        </div>
+        <div data-animate="fade-left" style="position: relative;">
+          <div style="position: absolute; inset: -1rem; background: var(--bg-blue); border-radius: 50%; filter: blur(40px); z-index: 0;"></div>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAqG35xgaTcniT8oZo1uYXlf2p0xgL7RpLj8efIUwRrxBdKfqNjXz0APGGiObcoPXhI7tkZCggyL_0mN-2I1m6XHcPHHt3ezMy1jca65rl3qziayItlJIAV6pqhH-fBbYtG1OPu5KafRNxfIObQsdPOThOsJFIUUGn-QsFJuW_DZ9vviXW3eh7PztRakURzJpvyGQslGsZt6SfzDutCd_--oaikwEB8PW0_W-3D9DW7SGD8IHBIPKyvUW2CN-7A1k2FuUf34kD6QM" alt="Restoration Service" class="img-rounded" style="height: auto; max-height: 500px; width: 100%; position: relative; z-index: 1; aspect-ratio: 4/3;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Details Section (White) -->
+    <section id="specialty" class="bg-white section-padding">
+      <div class="container text-center" data-animate="fade-up">
+        <h2 style="font-size: var(--size-xs); font-weight: bold; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-secondary); margin-bottom: var(--space-4);">Specialty Services</h2>
+        <h3 class="section-title">Beyond The Basic Scrub</h3>
+        <p class="section-subtitle max-w-2xl mx-auto">We provide specialized recovery for the most demanding pool conditions.</p>
+        
+        <div class="grid-3" style="margin-top: var(--space-12); text-align: left;" data-stagger>
+          
+          <div class="card bg-light-blue">
+             <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-accent); margin-bottom: var(--space-4);">waves</span>
+             <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-4);">Green Pool Recovery</h4>
+             <p class="card__text">Swift chemical rebalancing and filtration flushing to turn stagnant waters into swimmable sanctuaries in 48 hours or less.</p>
+          </div>
+
+          <div class="card bg-light-blue">
+             <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-accent); margin-bottom: var(--space-4);">grid_view</span>
+             <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-4);">Tile Cleaning</h4>
+             <p class="card__text">Removal of calcium deposits and waterline scaling using non-abrasive bead blasting technology that preserves tile integrity.</p>
+          </div>
+
+          <div class="card bg-light-blue">
+            <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-accent); margin-bottom: var(--space-4);">brush</span>
+            <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-4);">Surface Restoration</h4>
+            <p class="card__text" style="margin-bottom: var(--space-8);">Deep-stain acid washing and plaster resurfacing to remove organic staining and mineral buildup from pool floors and walls.</p>
+            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: var(--space-4); margin-top: auto; font-size: var(--size-xs); font-weight: bold; text-transform: uppercase; color: var(--text-secondary);">Professional Grade</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Transformations Gallery (Light Blue) -->
+    <section class="bg-light-blue section-padding">
+      <div class="container" data-animate="fade-up">
+        <h2 class="section-title" style="text-align: center; margin-bottom: var(--space-12);">The JerBear Transformation</h2>
+        <div class="grid-2">
+           <!-- Case 1 -->
+           <div>
+             <div style="display: flex; height: 300px; border-radius: var(--radius-xl); overflow: hidden; margin-bottom: var(--space-6); box-shadow: var(--shadow-lg);">
+                <div style="width: 50%; position: relative;">
+                   <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy2naKXDiP3P48ZatdJjI9jxTfqlEA7Fun3Pnla0Q0RLe-1wghs0kus5dNfMWKjXDbFZQFcKTvqiEHHZ1vPeJjx_zwy47KlbzS4TV2wd6-v6bz35fFl9FIveQLfYtOL-LKPeVyGH-QL9zWtEzoCAEISbqD4OFmFbEGSHEMXljXM5Sx0SuyBeQrXP_csZ6LuhOJGZcCH3J4YkHoGvq6j6LImkSZUeafdtmXx-uGdz4oVF_P5vvuVuMqPwalliZQYxzd21dFkRj0ems" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) brightness(0.6);">
+                   <div style="position: absolute; top: var(--space-4); left: var(--space-4); background: rgba(0,0,0,0.8); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-size: var(--size-xs); font-weight: bold; text-transform: uppercase;">Before</div>
+                </div>
+                <div style="width: 50%; position: relative;">
+                   <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmz8XmfTtJyRDvRpskiRPMSeioEN7sOuCXdjoNFgzF-HVU2UQCdqLQbVi7Qq4PIsXgEbc1gIwKKY-N8JjGHFyrxqhF9jJZ2wOvouzgjP-j-7GLxtEt7R_zRChJdRtntZgx6xiCnhl9Q2h7qAPTrChWE_k8lDyn4A3dOywVpxqpGv3MaXNKMDP7xoOrUsKrd1PB0VbQJ72-weugEqijGekPFSSNmyalzmr-HmNFWwmU9fI6I1CYeNwEvAHw5EurvwnkE7O4CRkA_4o" style="width: 100%; height: 100%; object-fit: cover;">
+                   <div style="position: absolute; top: var(--space-4); right: var(--space-4); background: var(--bg-blue); color: var(--color-secondary); padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-size: var(--size-xs); font-weight: bold; text-transform: uppercase;">After</div>
+                </div>
+             </div>
+             <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-2);">Mountain Shadows Estate</h4>
+             <p style="color: var(--text-secondary); font-style: italic;">"3 Years of neglect removed in 3 days."</p>
+           </div>
+           
+           <!-- Case 2 -->
+           <div>
+             <div style="display: flex; height: 300px; border-radius: var(--radius-xl); overflow: hidden; margin-bottom: var(--space-6); box-shadow: var(--shadow-lg);">
+                <div style="width: 50%; position: relative;">
+                   <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5JZCMMxwPETCeoM8Cf9URL0rMlFh3c7xkNcFLcwmhNdsHoehqfOH-jkQbJssOWMLalzOvfP2AMUvBZ_H4YcUiw6yDSy5pd-Cs2cpnnehzHBU0lrf8TtjGJv6GLWgm5GP-vWORyECvoO5NhPj6nPeewj9Gg5u_KzZMSgqJjgJ9kIKbwjTw4eJnjahXmJXnOmAK80N4zsPSqBZ7bVbGp7hT4V5GvuReSkqbsnRE8V81vbmcU-KgmjH8dJwXcVTrWefwIFfNWCCf-5Q" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) brightness(0.6);">
+                   <div style="position: absolute; top: var(--space-4); left: var(--space-4); background: rgba(0,0,0,0.8); color: white; padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-size: var(--size-xs); font-weight: bold; text-transform: uppercase;">Before</div>
+                </div>
+                <div style="width: 50%; position: relative;">
+                   <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOFgtWhkd4uhQnuY5jSWiitsbh3nSJarDuMRjDjt2DjUGI0WssKLSRP7h_rhAOP1IdQnwEMwASk5Uj_6Ez6PfEQKQz2wDBTVKtPwSio0jicnZqgYAAR5pRKPnmBjxS3wuviPQOTlSwlabWOwlQGcM88sEgNj-cOBQfsGxAtKGvaujzXEiGlLmZ1UDcj1TiAp-n77eUX0gFKfO7GbmJCDA9owKB85yOlqEIKaJ3Qfnbcxpt4kL7-NNHwXzgajgL5a9H5ZDwSfW2LkI" style="width: 100%; height: 100%; object-fit: cover;">
+                   <div style="position: absolute; top: var(--space-4); right: var(--space-4); background: var(--bg-blue); color: var(--color-secondary); padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-size: var(--size-xs); font-weight: bold; text-transform: uppercase;">After</div>
+                </div>
+             </div>
+             <h4 style="font-size: var(--size-xl); margin-bottom: var(--space-2);">Canyon View Residence</h4>
+             <p style="color: var(--text-secondary); font-style: italic;">"Full recovery after a severe monsoon season."</p>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding section--video" style="background: var(--bg-dark-blue); text-align: center;">
+      <div class="section__video-container">
+        <video autoplay muted loop playsinline poster="../Assests/Ref images/testimonial bg.png">
+          <source src="../Assests/Hero bg video/testimonial bg.mp4" type="video/mp4">
+        </video>
+        <div class="section__video-overlay" style="background: rgba(1, 34, 71, 0.75);"></div>
+      </div>
+      <div class="container" data-animate="fade-up">
+        <h2 class="testimonial-title" style="font-size: 3.5rem;">Bring Your Pool Back to Life</h2>
+        <p class="testimonial-subtitle" style="margin-bottom: var(--space-10);">From green pool recovery to tile cleaning, we restore your sanctuary to perfection.</p>
+        <a href="../contact.html" class="btn btn--primary btn--lg" style="background: white; color: var(--color-secondary); position: relative; z-index: 10;">Contact Us Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="footer__logo">
+            <img src="../Assests/Ref images/Logo.png" alt="JerBear Pool Care">
+          </a>
+          <p class="footer__tagline">Redefining pool maintenance with an editorial eye for clarity and professionalism.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html#why-us">Why Us</a></li>
+            <li><a href="../contact.html">Contact Form</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@jerbearpoolcare.com">hello@jerbearpoolcare.com</a></li>
+            <li><a href="tel:5552487631">(555) 248-7631</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="footerYear"></span> JerBear Pool Care. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav-init.js"></script>
+  <script src="../js/animations.js"></script>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>
