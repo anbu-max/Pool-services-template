@@ -23,15 +23,15 @@
 }
 
 .btn--primary {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+  background: var(--color-accent-warm);
   color: var(--text-inverse);
-  box-shadow: 0 4px 15px rgba(2,132,199,0.3);
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
 }
 .btn--primary:hover {
-  background: var(--bg-dark-blue);
+  background: #d97706; /* darker orange */
   color: var(--text-inverse);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(2,132,199,0.4);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6);
 }
 
 .btn--secondary {

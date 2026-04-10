@@ -74,7 +74,7 @@
 .card__icon {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+  background: var(--color-accent-warm);
   color: var(--text-inverse);
   border-radius: var(--radius-lg);
   display: flex;
@@ -107,7 +107,7 @@
   transition: background var(--duration-base);
 }
 .feature-box:hover { background: var(--bg-light-blue); border-color: rgba(2,132,199,0.1); }
-.feature-icon { color: var(--color-secondary); margin-bottom: var(--space-4); display: block; }
+.feature-icon { color: var(--color-accent-warm); margin-bottom: var(--space-4); display: block; }
 .feature-box h4 { margin-bottom: var(--space-2); }
 
 /* Form Card */
@@ -126,7 +126,7 @@
 }
 
 .form-card__info {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+  background: var(--color-accent-warm);
   padding: var(--space-12) var(--space-10);
   color: var(--text-inverse);
   display: flex;

@@ -29,9 +29,9 @@
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(0,0,0,0.60) 0%,
-    rgba(2,132,199,0.30) 50%,
-    rgba(0,0,0,0.70) 100%
+    rgba(0,0,0,0.30) 0%,
+    rgba(2,132,199,0.15) 50%,
+    rgba(0,0,0,0.40) 100%
   );
 }
 
@@ -81,7 +81,7 @@
   color: rgba(255,255,255,0.90);
   font-size: clamp(var(--size-base), 1.5vw, var(--size-md));
   font-weight: var(--weight-medium);
-  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
   max-width: 52ch;
   margin: 0 auto var(--space-10);
   transition-delay: var(--delay, 0ms);
